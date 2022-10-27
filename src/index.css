@@ -1,3 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .search-bar {
+    @apply p-10 flex items-center flex-col
+  }
+
+  .card {
+    @apply hover:scale-105 duration-150 transition-all cursor-pointer
+  }
+
+  .info {
+    @apply justify-center 
+  }
+
+  .main {
+    @apply bg-second h-screen
+  }
+
+  .details-page {
+    @apply bg-second h-screen p-10
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +37,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* 
+.info-section {
+  background-image: url("/image/background2.png")
+} */
