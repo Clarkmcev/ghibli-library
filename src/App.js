@@ -20,9 +20,7 @@ function App() {
           onClick={() => navigate("/")}
         />
         <div className="text-5xl">Library</div>
-        <div className="m-10 flex space-x-6">
-          <div>Home</div>
-        </div>
+        <div className="m-10 flex space-x-6"></div>
       </header>
       <Routes>
         <Route path="/" element={<ListOfMovies />} />

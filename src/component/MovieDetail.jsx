@@ -10,10 +10,12 @@ function MovieDetail() {
 
 
     const getMovieData = () => {
+        window.scrollTo(0, 0)
         axios.get(`https://ghibliapi.herokuapp.com/films/${id}`)
         .then((response) => 
         setMovie(response.data))
         .catch((err) => console.log(err))
+        
     }
 
     useEffect(() => {
@@ -24,7 +26,7 @@ function MovieDetail() {
     <>
         <div className="search-bar bg-hero info-section pt-20">
         </div>
-        <div className="details-page text-fourth text-left px-20">
+        <div className="details-page text-fourth text-left px-20 pl-60">
             <div className="text-6xl">{movie.title}</div>
             <div className="flex space-x-5 items-center py-5">
                 <div className="text-2xl text-third">{movie.original_title_romanised}</div>
@@ -40,7 +42,7 @@ function MovieDetail() {
                         <div className="text-base text-third">Rating :  <span className="text-fourth">{movie.rt_score}</span></div>
                         <div className="text-base text-third">Release date :  <span className="text-fourth">{movie.release_date}</span></div>
                     </div>
-                    <button onClick={()=>navigate("/")} className="absolute -bottom-10 right-20 text-second p-2 bg-third transition-all duration-200 rounded-2xl text-base w-1/6">Back to home page</button>
+                    <button onClick={()=>navigate("/")} className="absolute -bottom-40 right-20 text-second p-3 bg-third transition-all duration-200 rounded-2xl text-base w-fit hover:scale-105">Back to home page</button>
                 </div>
                 {/* <img src={movie.movie_banner} alt="" /> */}
             </div>
