@@ -2,8 +2,7 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import logoGhibli from "./image/pngegg.png";
-import TextField from "@mui/material/TextField";
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 import MovieDetail from "./component/MovieDetail";
 import ListOfMovies from "./pages/ListOfMovies";
 

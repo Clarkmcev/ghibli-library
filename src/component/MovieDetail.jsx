@@ -20,7 +20,7 @@ function MovieDetail() {
 
     useEffect(() => {
       getMovieData()  
-    },)
+    },[])
 
   return (
     <>
