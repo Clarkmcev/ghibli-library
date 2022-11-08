@@ -41,12 +41,13 @@ function ListOfMovies() {
             label="Search"
             className="w-2/6 bg-fourth rounded-2xl"
             />
-            <OutsideClickHandler       onOutsideClick={() => setShowFilter(!showFilter)}>
-            <div className="bg-fourth p-1 rounded-xl cursor-pointer hover:border-first border-none">
 
-              <button className="relative" onClick={()=>setShowFilter(!showFilter)}>
-                <BsFilterLeft size={"32px"}/>
-              </button>
+            <div className="bg-fourth p-1 rounded-xl cursor-pointer hover:border-first border-none">
+              <OutsideClickHandler  onOutsideClick={() => setShowFilter(false)}>
+                <button className="relative" onClick={()=>setShowFilter(!showFilter)}>
+                  <BsFilterLeft size={"32px"}/>
+                </button>
+              </OutsideClickHandler>
               {showFilter &&
               <div id="absolute" className="absolute flex flex-col text-left bg-fourth p-2 rounded-lg text-sm">
                 <a href="/" className="p-2 hover:bg-third rounded-lg">By rankings</a>
@@ -55,7 +56,7 @@ function ListOfMovies() {
               </div>
               }
             </div>   
-            </OutsideClickHandler>
+
             
         </div>
         <div className="main">
