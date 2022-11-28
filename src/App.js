@@ -15,10 +15,10 @@ function App() {
         <img
           src={logoGhibli}
           alt=""
-          className="w-80 cursor-pointer"
+          className="w-80 cursor-pointer absolute"
           onClick={() => navigate("/")}
         />
-        <div className="text-5xl">Library</div>
+        <div className="text-5xl m-auto">Ghibli's Library</div>
         <div className="m-10 flex space-x-6"></div>
       </header>
       <Routes>

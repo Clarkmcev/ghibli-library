@@ -60,7 +60,7 @@ function ListOfMovies() {
             
         </div>
         <div className="main">
-            <div className="flex flex-wrap space-x-2 px-20 bg-second text-fourth justify-center">
+            <div className="flex flex-wrap space-x-2 px-20 bg-second text-fourth">
             {movies
                 .filter((elem) => elem.title.toLowerCase().includes(inputText))
                 .map((movie) => (
