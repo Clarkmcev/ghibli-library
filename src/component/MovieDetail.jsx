@@ -11,15 +11,14 @@ function MovieDetail() {
 
     const getMovieData = () => {
         window.scrollTo(0, 0)
-        axios.get(`https://ghibliapi.herokuapp.com/films/${id}`)
+        axios.get(`https://ill-pink-snapper.cyclic.app/films/${id}`)
         .then((response) => 
         setMovie(response.data))
         .catch((err) => console.log(err))
-        
     }
 
     useEffect(() => {
-      getMovieData()  
+      getMovieData();
     },[])
 
   return (

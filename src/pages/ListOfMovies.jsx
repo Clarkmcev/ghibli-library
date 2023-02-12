@@ -15,7 +15,7 @@ function ListOfMovies() {
 
   const getData = () => {
     axios
-      .get("https://ghibliapi.herokuapp.com/films")
+      .get("https://ill-pink-snapper.cyclic.app/films")
       .then((response) => {
         setMovies(response.data);
       })
